@@ -15,6 +15,8 @@ import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
+  AppCenter.start(getApplication(), "cf9e40ec-4d22-4aef-be4d-989e510c0cb3", Analytics.class, Crashes.class);
+
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {
         @Override
